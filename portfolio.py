@@ -19,7 +19,7 @@ headers = {
     'X-CMC_PRO_API_KEY': api_key,
 }
 
-x.field_names = ["Asset", "Amount", "Value Owned", "Price", "1H", "24H", '7D']
+x.field_names = ["Asset", "Amount", "Value Owned", "Current Price", "1H", "24H", '7D']
 
 
 def get_coin(coin, amount):
