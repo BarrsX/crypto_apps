@@ -1,6 +1,4 @@
-import requests
 import json
-import prettytable
 from requests import Session
 from prettytable import PrettyTable
 
@@ -56,4 +54,3 @@ while ans == 'y':
     print(x)
     print('Add another coin? (y/n)')
     ans = input()
-
