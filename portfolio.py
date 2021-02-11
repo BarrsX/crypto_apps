@@ -6,7 +6,7 @@ from prettytable import PrettyTable
 
 x = PrettyTable()
 
-api_key = '0ed0eb04-94e3-4ce1-aa32-cbac4f8702f1'
+api_key = 'api_key'
 global_url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 
 parameters = {
