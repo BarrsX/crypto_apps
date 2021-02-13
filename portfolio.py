@@ -4,7 +4,7 @@ from prettytable import PrettyTable
 
 x = PrettyTable()
 
-api_key = 'api_key'
+api_key = '0ed0eb04-94e3-4ce1-aa32-cbac4f8702f1'
 global_url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 
 parameters = {
@@ -42,15 +42,19 @@ def get_coin(coin, amount):
     )
 
 
-ans = 'y'
-while ans == 'y':
-    print('\nEnter coin symbol')
-    sym = input()
-    sym = sym.upper()
-    print('Enter amount')
-    am = input()
-    am = float(am)
-    get_coin(sym, am)
-    print(x)
-    print('Add another coin? (y/n)')
-    ans = input()
+def prompt():
+    ans = 'y'
+    while ans == 'y':
+        print('\nEnter coin symbol')
+        sym = input()
+        sym = sym.upper()
+        print('Enter amount')
+        am = input()
+        am = float(am)
+        get_coin(sym, am)
+        print(x)
+        print('Add another coin? (y/n)')
+        ans = input()
+
+
+prompt()
